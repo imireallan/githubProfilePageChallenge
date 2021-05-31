@@ -1,0 +1,47 @@
+.main-nav {
+    background-color: $mainBgColor;
+    padding: 1.5rem;
+
+    .nav-center {
+        ul {
+            li {
+                &:not(:last-child) {
+                    margin-right: $mr;
+                }
+            }
+        }
+    }
+
+    .nav-left {
+        // img {
+        //     margin-right: 1em;
+        //     background-color: white;
+        //     width: 30px;
+        //     height: 30px;
+    
+        // }
+        .logo {
+            margin-right: 1em;
+            // background-color: white;
+            width: 30px;
+            height: 30px;
+    
+        }
+    }
+
+    .nav-right {
+        ul {
+            li {
+                &:not(:last-child) {
+                    margin-right: $mr;
+                }
+                a {
+                .avatar {
+                    background: pink;
+                    border-radius: 50%;
+                }
+                }
+            }
+        }
+    }
+}

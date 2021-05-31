@@ -1,0 +1,89 @@
+html {
+	font-size: 100%;
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	line-height: 1.3;
+}
+
+// Flexbox
+
+.flex {
+	display: flex;
+	&-jc-sb {
+		justify-content: space-between;
+	}
+	&-jc-c {
+		justify-content: center;
+	}
+	&-ai-c {
+		align-items: center;
+	}
+	&-fd {
+		flex-direction: column;
+	}
+	&-ac-c {
+		align-content: center;
+		flex-wrap: wrap;
+	}
+}
+
+a, a:visited, a:hover {
+	text-decoration: none;
+	color: $primaryColor;
+}
+
+
+ul {
+	list-style: none;
+}
+
+.grid {
+	display: grid;
+	&-2-cols {
+		grid-template-columns: 200px 1fr;
+	}
+	&-col-gap {
+		column-gap: 5.1em;
+	}
+}
+
+// input forms 
+.form-control {
+	background-color: #0d1117;
+	border: 1px solid #21262d;
+	color: #c9d1d9;
+	line-height: 20px;
+	padding: 5px 12px;
+	border-radius: 6px;
+	outline: none;
+
+	&:focus {
+		outline: none;
+		border-color: #388bfd;
+		box-shadow: rgb(12, 45, 107) 0px 0px 0px 3px;
+	}
+}
+
+// fill color for icons 
+.icon {
+	fill: white;
+	&-xs {
+		width: 10px;
+		height: 10px;
+	}
+	&-sm {
+		width: 20px;
+		height: 20px;
+	}
+
+}
